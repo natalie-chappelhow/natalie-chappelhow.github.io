@@ -196,7 +196,7 @@
 		<div id="contactForm">
 			<h2>Contact</h2>
 			<p>Want to talk about working together, got any questions or general chat? Feel free to contact me via the form below. Alternatively follow the links in the footer to find me on other platforms or via email.</p>
-			<form>
+			<form id="contactForm" action="mailto:nataliechappelhowwebdeveloper@gmail.com" method="post" enctype="text/plain">
 				<div class="form-group" method="post" action="sendForm.php">
 					<p style="font-size:14px;">Fields marked with an * are required</p>
 					<label for="inputName">Name: <span>*</span></label>
@@ -214,9 +214,7 @@
 				<label for="inputMessage">Message: <span>*</span></label>
 				<textarea class="form-control" id="inputMessage" placeholder="Please type your message here" name="message"></textarea>
 				</div>
-				<!--
 				<input class="btn btn-default pull-right" type="submit" value="Submit">
-				-->
 			</form>
 		</div>
 	</div>
