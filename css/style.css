@@ -45,7 +45,7 @@ li > a:active{
 
 .card-footer{
 	background-color:#fff; 
-	width:100%;	
+	width:98%;	/*width for desktop*/
 	height:30px;
 }
 
@@ -137,3 +137,29 @@ footer p, h4{
 #linkedin{
 	height:32px;
 }
+
+
+/*media query for mobile*/
+@media screen and (min-width: 200px) and (max-width:766px){
+	.card-footer{width:100%;}
+}
+
+
+
+/*media query for tablet*/
+@media screen and (min-width: 767px) and (max-width:1000px){
+	.card-footer{width:56.5%;}
+}
+
+
+/*media query for larger tablet*/
+@media screen and (min-width: 1001px) and (max-width:1200px){
+	.card-footer{width:86%;}
+}
+
+
+
+
+
+
+
