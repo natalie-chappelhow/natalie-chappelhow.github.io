@@ -4,7 +4,7 @@ body{
 }
 
 .container-fluid{ /*creating a fluid container so the webpage fits any size screen*/
-	max-width:100%; 
+	max-width:100%;
 }
 
 /*navigation styling*/
@@ -17,13 +17,13 @@ body{
 }
 
 h3 a{
-	font-size:22px; 
+	font-size:22px;
 }
 
 a{
 	color:#000;
 	font-size:17px;
-	position:relative; 
+	position:relative;
 }
 
 li > a:hover{ /*making the link a child of the li*/
@@ -44,7 +44,7 @@ li > a:active{
 
 
 .card-footer{
-	background-color:#fff; 
+	background-color:#fff;
 	width:98%;	/*width for desktop*/
 	height:30px;
 }
@@ -63,14 +63,14 @@ li > a:active{
 }
 
 #portfolio,#about,#contactForm{
-	padding-top:20px; 
+	padding-top:20px;
 }
 
 
 
 
 #beeRandom,#beePath,#r2d2,#gamesDesigner,#formValidation,#function,#berite{
-	margin-top:20px; 
+	margin-top:20px;
 }
 
 
@@ -94,7 +94,7 @@ li > a:active{
 
 p{
 	font-family:"Noto-Serif";
-	font-size:18px; 
+	font-size:18px;
 }
 
 h2{
@@ -130,13 +130,16 @@ footer p, h4{
 
 
 #facebook, #pinterest, #github, #linkedin{
-	padding-right:20px; 
+	padding-right:20px;
 	float:left;
 }
 
 #linkedin{
 	height:32px;
 }
+
+
+
 
 
 /*media query for mobile*/
@@ -156,6 +159,9 @@ footer p, h4{
 @media screen and (min-width: 1001px) and (max-width:1200px){
 	.card-footer{width:86%;}
 }
+
+
+
 
 
 
