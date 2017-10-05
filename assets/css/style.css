@@ -90,11 +90,9 @@ li > a:active{
 
 
 
-
-
 p{
 	font-family:"Noto-Serif";
-	font-size:18px;
+	font-size:20px;
 }
 
 h2{
@@ -107,8 +105,18 @@ h1,h2,h3,h4,h5{
 	color:#000;
 }
 
+
+.skills{
+	font-size:16px;
+}
+
 .btn{
 	background-color:#59c3c3;
+}
+
+
+#cvButton{
+	margin-top:30px;
 }
 
 
