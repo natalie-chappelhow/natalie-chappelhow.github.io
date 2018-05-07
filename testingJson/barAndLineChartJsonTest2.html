@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="assets/javascript/Chart.min.js"></script>
+</head>
+<body>
+
+	<canvas id="barChart"></canvas>
+
+	<script>
+	var coronerData;
+
+	var dataForChart = {
+		datasets: [{
+			label: "killedUnlawfully",
+			backgroundColor: "red"
+		},
+		{
+			label: "killedLawfully",
+			backgroundColor: "yellow"
+		},
+
+		{
+			label: "lackofCareOrSelfNeglect",
+			backgroundColor: "orange"
+		},
+
+		{
+			label:"industrialDisease",
+			backgroundColor: "blue"
+		},
+
+		{
+			label:"accidentOrMisadventure",
+			backgroundColor: "green"
+		},
+
+		{
+			label:"naturalCauses",
+			backgroundColor: "purple"
+		}
+		]
+	};
+
+
+
+	//https://www.w3schools.com/xml/ajax_intro.asp
+	//When the page is loaded the Ajax function runs
+	function loadDoc() {
+		var requestFile = new XMLHttpRequest(); //an XMLHttpRequest object is created
+		requestFile.onreadystatechange = function() {
+			//XMLHttpRequest object sends a request to the server. The server processes the request
+			if (this.readyState == 4 && this.status == 200) {
+				coronerData = JSON.parse(this.responseText);
+				console.log(coronerData);
+
+				dataForChart.labels = createArray(coronerData, "year");//calling the labels for the x axis
+
+				for (var i = 0; i < dataForChart.datasets.length; i++){//calling the dataset
+					dataForChart.datasets[i].data = createArray(coronerData, dataForChart.datasets[i].label);
+				}
+				console.log(dataForChart);//checking that the variable works by calling it to the console
+				chartBar();//calling the chartBar function which draws the charts
+			}
+		};
+		requestFile.open("GET", "data.json", true);//gets the JSON file
+		requestFile.send();//sends the file back to the webpage
+	}
+
+	loadDoc();//calling the function
+
+	//action is performed
+		function createArray(array, key){
+			var callArray = [];
+
+			for(var i = 0; i < array.length; i++){
+				callArray.push(array[i][key]);
+			}
+			return callArray;
+		}
+
+
+
+
+		var ctx = document.getElementById('barChart').getContext('2d');
+
+		//creating a bar chart
+		function chartBar(){
+			var myChart = new Chart(ctx, {
+			  type: 'bar',
+			  data: dataForChart
+			});
+
+
+
+		var mixedChart = new Chart(ctx, {
+			  type: 'bar',
+			  data: {
+			    datasets: [{
+			          label: 'Total Inquests',
+			          data: dataForChart
+			        }, {
+			          label: 'Male Inquests',
+			          data: [19931, 20041, 20317, 21275, 19338, 21307],
+			          fill:false,
+
+			          //label: 'Female Dataset2',
+			          //data: [44, 62, 12, 39],
+
+			          // Changes a dataset to become a line chart
+			          type: 'line'
+			        }],
+			    labels: ['2010', '2011', '2012', '2013', '2014', '2015']
+			  },
+				  options: {
+		    		  title:{//adding a title
+				    	  display: true,//displaying a title
+				    	  text: "Inquest Conclusions Recorded in England and Wales 2010-2015", //choosing the text for the title
+				    	  fontSize:20,
+		    		  }
+		    	  }
+		});
+	}
+
+	</script>
+
+</body>
+</html>

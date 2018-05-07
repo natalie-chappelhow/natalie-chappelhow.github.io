@@ -1,0 +1,216 @@
+body{
+ 	padding-top:90px;
+	background-color:#fafafa;
+}
+
+.container-fluid{ /*creating a fluid container so the webpage fits any size screen*/
+	max-width:100%;
+}
+
+/*navigation styling*/
+.navbar{
+	background-color:#1b242f;
+	border-bottom: 3px solid #59c3c3;
+}
+
+.navbar li{
+	padding-top:20px;
+	text-transform:uppercase;
+}
+
+
+h3 a{
+	font-size:22px;
+}
+
+a{
+	color:#000;
+	font-size:17px;
+	position:relative;
+}
+
+
+.navbar-default .navbar-nav > li > a{
+	color:#fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+	color:#59c3c3;
+	/*border-bottom:solid 5px #fff;*/
+}
+
+
+li > a:active{
+	top:2px;/*make the button when pressed appear to move*/
+}
+
+
+/*card styling*/
+
+.row a{
+	text-decoration:1px solid;
+}
+
+
+/*.card-footer{
+	background-color:#fff;
+	width:98%;	width for desktop
+	height:30px;
+}
+
+.card-footer h4{
+	color:#000;
+	font-size:17px;
+}
+*/
+
+.card{
+	background-color: #fff;
+	margin-top:15px;
+	border-radius: 5px;
+    border: 1px solid #D3D3D3;
+    width:100%;
+}
+
+
+
+.card-text{
+	margin-left:15px;
+	/*text-align: center;*/
+}
+
+
+
+/*creating box shadow - http://www.cssmatic.com/box-shadow*/
+.card-footer{
+  -webkit-box-shadow: 0 35px 40px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 35px 40px -10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+#portfolio,#about,#contactForm{
+	padding-top:20px;
+}
+
+
+
+/*This bit of CSS is used to hide the additionalRows when the page is loaded*/
+.additionalRows{
+	display:none;
+}
+
+
+
+/*styling the button that shows the additional portfolio rows*/
+#portfolioAdditions{
+	margin:20px 15px 0px 0px;
+}
+
+
+
+p{
+	font-family:"Noto-Serif";
+	font-size:20px;
+}
+
+
+h2{
+	/*border-bottom:5px solid #59c3c3;*/
+	text-align:center;
+	font-size:32px;
+}
+
+
+h1,h2,h3,h4,h5{
+	font-family:"Montserrat";
+	color:#000;
+}
+
+
+.skills{
+	font-size:16px;
+}
+
+.btn{
+	background-color:#59c3c3;
+	border-radius:0px;
+	padding:6px 15px;
+}
+
+
+#cvButton{
+	margin-top:30px;
+}
+
+
+.#beeRandom,#beePath,#r2d2,#gamesDesigner,#formValidation,#function,#berite{
+	width:100%;
+}
+
+
+#about, #contactForm{
+	margin-top:30px;
+}
+
+/*footer styling*/
+footer{
+	background-color:#403f3f;
+	margin-top:20px;
+	width: 100%;
+	height: 100%;
+}
+
+.social{
+	background-color:#403f3f;
+}
+
+
+#facebook, #pinterest, #github, #linkedin{
+	padding-right:15px;
+	margin:auto;
+	display: inline;
+	text-align: center;
+}
+
+#linkedin{
+	height:20px;
+}
+
+
+.copyright{
+	color:#fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/*media query for mobile*/
+@media screen and (min-width: 200px) and (max-width:766px){
+	.card{width:100%;}
+	/*#about{text-align: center;}*/
+}
+
+
+
+/*media query for tablet*/
+@media screen and (min-width: 767px) and (max-width:1000px){
+	.card{width:56.5%;}
+}
+
+
+/*media query for larger tablet*/
+@media screen and (min-width: 1001px) and (max-width:1200px){
+	.card{width:86%;}
+}
+
+
+
+
+
+
+
+
+
+
+

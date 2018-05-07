@@ -1,0 +1,62 @@
+[
+	{
+		"year": 2010,
+		"killedUnlawfully": 58,
+		"killedLawfully": 2,
+		"lackofCareOrSelfNeglect": 15,
+		"industrialDisease": 201,
+		"accidentOrMisadventure": 3072,
+		"naturalCauses": 2997
+	},
+
+	{
+		"year": 2011,
+		"killedUnlawfully": 62,
+		"killedLawfully": 3,
+		"lackofCareOrSelfNeglect": 23,
+		"industrialDisease": 190,
+		"accidentOrMisadventure": 2964,
+		"naturalCauses": 3567
+	},
+
+	{
+		"year": 2012,
+		"killedUnlawfully": 50,
+		"killedLawfully": 0,
+		"lackofCareOrSelfNeglect": 16,
+		"industrialDisease": 214,
+		"accidentOrMisadventure": 2987,
+		"naturalCauses": 3207
+	},
+
+	{
+		"year": 2013,
+		"killedUnlawfully": 40,
+		"killedLawfully": 2,
+		"lackofCareOrSelfNeglect": 11,
+		"industrialDisease": 208,
+		"accidentOrMisadventure": 3205,
+		"naturalCauses": 3347
+	},
+
+	{
+		"year": 2014,
+		"killedUnlawfully": 61,
+		"killedLawfully": 2,
+		"lackofCareOrSelfNeglect": 20,
+		"industrialDisease": 265,
+		"accidentOrMisadventure": 3301,
+		"naturalCauses": 2059
+	},
+
+	{
+		"year": 2015,
+		"killedUnlawfully": 53,
+		"killedLawfully": 0,
+		"lackofCareOrSelfNeglect": 7,
+		"industrialDisease": 222,
+		"accidentOrMisadventure": 3473,
+		"naturalCauses": 6216
+	}
+
+]
